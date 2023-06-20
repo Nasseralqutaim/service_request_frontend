@@ -1,16 +1,19 @@
 <template>
-  <div>
-    <h1>Welcome to the Home View!</h1>
-    <p>This is the home page of your application.</p>
-  </div>
+  <router-link to="/">Home</router-link>
+  <router-link to="/signup">Signup</router-link>
+  <router-link to="/login">Login</router-link>
+  <router-link to="/logout">Logout</router-link>
 </template>
 
-<script>
-export default {
-  // Add any necessary component logic here
-};
-</script>
+<script></script>
 
 <style>
-/* Add any necessary styles here */
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>

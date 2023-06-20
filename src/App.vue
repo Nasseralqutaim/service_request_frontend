@@ -1,17 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <nav>
+      <router-link to="/">Home</router-link>
+      <router-link to="/signup">Signup</router-link>
+      <router-link to="/login">Login</router-link>
+      <router-link to="/logout">Logout</router-link>
+    </nav>
+    <router-view />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+  data: function () {
+    return {
+      isLoggedIn: false,
+    };
+  },
+  watch: {
+    $route: function () {
+      console.log("Route has changed!");
+      this.isLoggedIn = !!localStorage.jwt;
+    },
+  },
+};
 </script>
 
 <style>
