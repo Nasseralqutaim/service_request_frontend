@@ -3,8 +3,15 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <nav>
       <router-link to="/">Home</router-link>
+      <span>&nbsp;</span>
+      <span v-if="isLoggedIn">Logged In</span>
+      <span v-else>Logged Out</span>
+      <span>&nbsp;</span>
+
       <router-link to="/signup">Signup</router-link>
+      <span>&nbsp;</span>
       <router-link to="/login">Login</router-link>
+      <span>&nbsp;</span>
       <router-link to="/logout">Logout</router-link>
     </nav>
     <router-view />
