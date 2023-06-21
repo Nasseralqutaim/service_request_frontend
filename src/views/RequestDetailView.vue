@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Request Detail</h1>
+    <h1>Request Details:</h1>
     <div v-if="loading">Loading...</div>
     <div v-else>
       <p>
@@ -43,3 +43,5 @@ export default {
   },
 };
 </script>
+
+<style scoped></style>

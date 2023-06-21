@@ -3,7 +3,8 @@ import HomeView from "@/views/HomeView.vue";
 import AboutView from "@/views/AboutView.vue";
 import LoginView from "@/views/LoginView.vue";
 import LogoutView from "@/views/LogoutView.vue";
-import RequestDetail from "@/views/RequestDetailView.vue";
+import RequestDetailView from "@/views/RequestDetailView.vue";
+import UserRequestsView from "@/views/UserRequestsView.vue";
 
 const routes = [
   {
@@ -29,12 +30,17 @@ const routes = [
   {
     path: "/requests/:id",
     name: "request-detail",
-    component: RequestDetail,
+    component: RequestDetailView,
   },
   {
     path: "/logout",
     name: "logout",
     component: LogoutView,
+  },
+  {
+    path: "/users/:user_id/requests",
+    name: "user-requests",
+    component: UserRequestsView,
   },
 ];
 

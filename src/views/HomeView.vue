@@ -1,6 +1,6 @@
 <template>
   <!-- Create HTML for a welcome page below -->
-  <h1>Welcome to the Support Center</h1>
+  <h1>Welcome to Service Reqest Platform</h1>
   <p>Here you can find all the information you need to get started with our product.</p>
   <p>Click on the links above to learn more.</p>
   <router-link to="/">Home</router-link>
