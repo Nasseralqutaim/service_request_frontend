@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <img alt="Vue logo" src="./assets/service-request-icon-1.png" />
     <nav>
       <router-link to="/">Home</router-link>
       <span>&nbsp;</span>
