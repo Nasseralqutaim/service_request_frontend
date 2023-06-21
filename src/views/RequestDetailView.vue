@@ -37,7 +37,7 @@ export default {
     id: String,
   },
   async created() {
-    const response = await axios.get(`/requests/${this.id}`);
+    const response = await axios.get(`/requests/${this.$route.params.id}`);
     this.request = response.data;
     this.loading = false;
   },
