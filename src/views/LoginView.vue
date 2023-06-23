@@ -30,21 +30,37 @@ export default {
 </script>
 
 <template>
-  <div class="login">
-    <form v-on:submit.prevent="submit()">
-      <h1>Login</h1>
-      <ul>
-        <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
-      </ul>
-      <div>
-        <label>Email:</label>
-        <input type="email" v-model="newSessionParams.email" />
-      </div>
-      <div>
-        <label>Password:</label>
-        <input type="password" v-model="newSessionParams.password" />
-      </div>
-      <input type="submit" value="Submit" />
-    </form>
+  <div id="nav">
+    <div class="login">
+      <form v-on:submit.prevent="submit()">
+        <h1>Login</h1>
+        <ul>
+          <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
+        </ul>
+        <div>
+          <label>Email:</label>
+          <input type="email" v-model="newSessionParams.email" />
+        </div>
+        <button @click="forgotPassword">Forgot Password?</button>
+        <label>
+          <input type="checkbox" v-model="rememberMe" />
+          Remember Me
+        </label>
+        <button @click="login">Login</button>
+        <div>
+          <label>Password:</label>
+          <input type="password" v-model="newSessionParams.password" />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
   </div>
 </template>
+
+<style>
+#nav {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px;
+}
+</style>

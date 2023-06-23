@@ -5,7 +5,7 @@
       <router-link to="/">Home</router-link>
       <span>&nbsp;</span>
       <span v-if="isLoggedIn">Logged In</span>
-      <span v-else>Logged Out</span>
+      <!-- <span v-else>Logged Out</span> -->
       <span>&nbsp;</span>
 
       <router-link to="/signup">Signup</router-link>
@@ -43,6 +43,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 </style>

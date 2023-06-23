@@ -12,6 +12,10 @@
 <script></script>
 
 <style>
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 #app {
   font-family: Avenir, Helvetica, "Times New Roman", Times, serif, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -19,5 +23,30 @@
   text-align: center;
   color: #502c2c;
   margin-top: 60px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+router-link {
+  display: inline-block;
+  margin: 5px;
+  color: #502c2c;
+  text-decoration: none;
+  border: 1px solid #502c2c;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+router-link:hover {
+  background-color: #502c2c;
+  color: #fff;
 }
 </style>

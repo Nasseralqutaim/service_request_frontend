@@ -61,3 +61,40 @@ export default {
   },
 };
 </script>
+
+<style>
+.container {
+  margin: 20px;
+}
+
+.loading {
+  font-weight: bold;
+  color: gray;
+}
+
+.request-item {
+  margin-bottom: 5px;
+}
+
+.new-request-form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+</style>

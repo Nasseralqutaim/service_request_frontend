@@ -13,5 +13,18 @@ export default {
 </script>
 
 <style>
-/* Add any necessary styles here */
+.about-container {
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
 </style>
